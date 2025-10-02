@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Script de Vente Complet - ImmoTHEP</title>
+<style>
+    body { font-family: Arial, sans-serif; background: #f0f0f0; margin: 0; padding: 20px; }
+    .container { max-width: 900px; margin: auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    h1, h2, h3 { color: #333; margin-top: 20px; }
+    .section { margin-bottom: 30px; padding: 15px; border-left: 5px solid #007bff; background: #f9f9f9; border-radius: 5px; }
+    .subtext { font-style: italic; color: #555; margin-top: 5px; }
+    label { font-weight: bold; display: block; margin-top: 10px; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { padding: 10px 20px; margin-top: 20px; border: none; border-radius: 5px; background: #007bff; color: #fff; cursor: pointer; }
+    button:hover { background: #0056b3; }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Script de Vente Complet - ImmoTHEP</h1>
+
+    <!-- Section 1 : Introduction -->
+    <div class="section">
+        <h2>1. Introduction</h2>
+        <p class="subtext">Bonjour [Prénom], comment allez-vous aujourd'hui ? Merci d’avoir pris ce moment pour échanger sur la formation ImmoTHEP. Moi c’est BAYRAM EMRE, je suis conseiller pour ImmoTHEP.</p>
+        <label>Prénom :</label>
+        <input type="text" id="prenom">
+        <p class="subtext">(Attendre, écouter attentivement, valoriser la réponse : "Excellent je vois que vous êtes déterminé et motivé…")</p>
+        <label>Qu’est-ce qui vous a donné envie de franchir le pas et de prendre cet appel aujourd’hui ?</label>
+        <textarea id="motivation" rows="3"></textarea>
+        <label>Parlez-moi un peu de vous (âge, situation familiale, métier, etc.)</label>
+        <textarea id="infos_personnelles" rows="3"></textarea>
+    </div>
+
+    <!-- Section 2 : Leadership & cadrage -->
+    <div class="section">
+        <h2>2. Leadership & Cadrage</h2>
+        <p class="subtext">Voilà mon mode de fonctionnement : je prends le temps de comprendre vos besoins, vos attentes et vos freins. Ensuite je vous proposerai une solution sur mesure, que nous allons co-construire ensemble. Ça vous convient ?</p>
+    </div>
+
+    <!-- Section 3 : Découverte -->
+    <div class="section">
+        <h2>3. Découverte</h2>
+        <p class="subtext">(Ton calme, écoute active)</p>
+        <label>Qu’est-ce qui vous a motivé à vous intéresser à l’immobilier aujourd’hui ?</label>
+        <textarea id="motivation_immobilier" rows="3"></textarea>
+        <label>À quoi ressemble votre situation actuelle (emploi, revenus, épargne, dettes éventuelles) ?</label>
+        <textarea id="situation_actuelle" rows="3"></textarea>
+        <label>Avez-vous déjà investi dans l’immobilier ? Si oui, comment ça s’est passé ?</label>
+        <textarea id="investissements_precedents" rows="3"></textarea>
+        <label>Quels obstacles vous empêchent aujourd’hui de passer à l’action ?</label>
+        <textarea id="obstacles" rows="3"></textarea>
+        <label>Si rien ne change dans les prochains mois, qu’est-ce que vous risquez de manquer ?</label>
+        <textarea id="risques" rows="3"></textarea>
+        <label>Dans 6 mois – 1 an, qu’aimeriez-vous avoir accompli ?</label>
+        <textarea id="projection" rows="3"></textarea>
+        <label>Qu’est-ce que ça changerait concrètement pour vous ?</label>
+        <textarea id="changement" rows="3"></textarea>
+    </div>
+
+    <!-- Section 4 : Creuser les douleurs -->
+    <div class="section">
+        <h2>4. Creuser les douleurs</h2>
+        <p class="subtext">(Ton calme, empathique)</p>
+        <label>Qu’est-ce qui vous frustre le plus dans votre situation actuelle ?</label>
+        <textarea id="frustrations" rows="3"></textarea>
+        <label>Dans quelles situations ça vous impacte le plus ?</label>
+        <textarea id="impact" rows="3"></textarea>
+        <label>Qu’est-ce qui vous inquiète le plus si vous ne passez pas à l’action maintenant ?</label>
+        <textarea id="inquietudes" rows="3"></textarea>
+        <p class="subtext">Rassurez-vous, vous êtes dans la situation de la grande majorité des personnes mais ce qui vous différencie c'est votre motivation à avoir une vie confortable. Est-ce bien cela ?</p>
+    </div>
+
+    <!-- Section 5 : Vision de paradis -->
+    <div class="section">
+        <h2>5. Vision de paradis</h2>
+        <p class="subtext">(Ton motivant, voix plus vive)</p>
+        <label>Imaginez qu’on se retrouve dans 12 mois et que vous ayez réalisé votre premier investissement : ça ressemble à quoi concrètement ?</label>
+        <textarea id="vision_paradis" rows="3"></textarea>
+        <label>Quelle serait la première chose que vous feriez avec vos premiers revenus locatifs ?</label>
+        <textarea id="revenus_locatifs" rows="3"></textarea>
+        <label>Dans votre quotidien, qu’est-ce qui changerait le plus pour vous ?</label>
+        <textarea id="quotidien_change" rows="3"></textarea>
+        <label>Qu’est-ce que ça représenterait émotionnellement de savoir que votre argent travaille pour vous ?</label>
+        <textarea id="emotion" rows="3"></textarea>
+        <p class="subtext">En fin de compte ce n'est pas si compliqué que ça de réaliser vos rêves. Vous avez déjà franchi la porte.</p>
+    </div>
+
+    <!-- Section 6 : Reformulation -->
+    <div class="section">
+        <h2>6. Reformulation</h2>
+        <p class="subtext">(Ton clair, voix posée, rassurante)</p>
+        <p>Si je résume :</p>
+        <ul>
+            <li>Aujourd’hui ce qui vous dérange, c’est [ex: argent qui dort, peur de se lancer seul, dépendance au salaire].</li>
+            <li>Ça impacte [ex: votre liberté, vos projets familiaux, votre confiance].</li>
+            <li>Ce que vous voulez, c’est [objectif: un premier investissement rentable, préparer votre retraite, créer un patrimoine].</li>
+            <li>Parce que derrière, ce qui compte vraiment pour vous, c’est [motivation profonde: sécurité familiale, indépendance financière, liberté].</li>
+        </ul>
+        <p>Est-ce bien ça ?</p>
+    </div>
+
+    <!-- Section 7 : Pré-cadrage de l’offre -->
+    <div class="section">
+        <h2>7. Pré-cadrage de l’offre</h2>
+        <p class="subtext">(Ton ferme, leadership)</p>
+        <p>Écoutez [Prénom], vous avez les 3 qualités clés d’un bon investisseur :</p>
+        <ul>
+            <li>Motivation</li>
+            <li>Volonté d’apprendre</li>
+            <li>Prêt à se faire accompagner</li>
+        </ul>
+        <p>Avant de vous présenter la solution, je travaille uniquement avec des personnes qui savent prendre des décisions rapides. Est-ce que vous êtes ok pour prendre une décision claire à la fin de cet appel (oui/non) ?</p>
+    </div>
+
+    <!-- Section 8 : Présentation de l’offre -->
+    <div class="section">
+        <h2>8. Présentation de l’offre</h2>
+        <p class="subtext">(Ton énergique et convaincant)</p>
+        <p>D’après ce que vous m’avez partagé, la formation qui correspond le mieux est :</p>
+        <ul>
+            <li>Pack 6 mois – “Investisseur Starter” : 1980€ (4x = 495€, 6x = 330€)</li>
+            <li>Pack 12 mois – “Investisseur Pro” : 2480€ (4x = 620€, 6x = 414€)</li>
+            <li>Pack 24 mois – “Indépendance financière” : 2990€</li>
+        </ul>
+        <p class="subtext">Bonus offerts : outils de gestion, documents juridiques, communauté privée, session stratégique individuelle, conférence sur un yacht.</p>
+    </div>
+
+    <!-- Section 9 : Gestion des objections -->
+    <div class="section">
+        <h2>9. Gestion des objections</h2>
+        <p class="subtext">(Ton doux, compréhensif mais ferme)</p>
+        <p>Objection prix : « Je comprends totalement [Prénom], c’est normal d’y réfléchir. Mais dites-moi : est-ce que c’est le montant total qui bloque, ou est-ce que vous doutez de la valeur du programme ? »</p>
+        <p class="subtext">Ce qui n'ont pas réussi aujourd'hui, c'est ce qui sont toujours en train de réfléchir. Les autres sont déjà partis loin.</p>
+    </div>
+
+    <!-- Section 10 : Closing & onboarding -->
+    <div class="section">
+        <h2>10. Closing & onboarding</h2>
+        <p class="subtext">(Ton souriant et dynamique)</p>
+        <p>Félicitations [Prénom]! Vous venez de franchir un cap important vers votre indépendance financière.</p>
+        <p>Ensuite :</p>
+        <ul>
+            <li>Vous recevez vos accès à la plateforme.</li>
+            <li>On planifie votre premier appel stratégique.</li>
+            <li>Vous rejoignez le groupe privé d’investisseurs.</li>
+        </ul>
+        <p>Bonus exclusif : audit personnalisé de votre situation financière.</p>
+        <p>Êtes-vous prêt(e) à démarrer aujourd’hui ?</p>
+    </div>
+
+    <button id="saveBtn">Sauvegarder les réponses</button>
+</div>
+
+<script>
+document.getElementById('saveBtn').addEventListener('click', () => {
+    const responses = {
+        prenom: document.getElementById('prenom').value,
+        motivation: document.getElementById('motivation').value,
+        infos_personnelles: document.getElementById('infos_personnelles').value,
+        motivation_immobilier: document.getElementById('motivation_immobilier').value,
+        situation_actuelle: document.getElementById('situation_actuelle').value,
+        investissements_precedents: document.getElementById('investissements_precedents').value,
+        obstacles: document.getElementById('obstacles').value,
+        risques: document.getElementById('risques').value,
+        projection: document.getElementById('projection').value,
+        changement: document.getElementById('changement').value,
+        frustrations: document.getElementById('frustrations').value,
+        impact: document.getElementById('impact').value,
+        inquietudes: document.getElementById('inquietudes').value,
+        vision_paradis: document.getElementById('vision_paradis').value,
+        revenus_locatifs: document.getElementById('revenus_locatifs').value,
+        quotidien_change: document.getElementById('quotidien_change').value,
+        emotion: document.getElementById('emotion').value
+    };
+
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(responses, null, 2));
+    const dlAnchor = document.createElement('a');
+    dlAnchor.setAttribute("href", dataStr);
+    dlAnchor.setAttribute("download", `${responses.prenom || 'prospect'}_reponses.json`);
+    dlAnchor.click();
+
+    alert("Vos réponses ont été sauvegardées !");
+});
+</script>
+</body>
+</html>
